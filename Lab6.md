@@ -56,9 +56,14 @@ From cli-vm:
 
 Check with steps 2 and 3 until the PVC and PV have a status of *Bound*. You now have a persistent volume provisioned and a corresponding claim. The last step is to configure a pod to use the persistent volume by referenceing the claim name (my-claim). But first, let's see what happens when we don't have a persistent volume configured for a pod.
 
-#### Create a Pod and Change a File
+#### Change a File on a Pod / Delete & Recreate Pod
 
-In this exercise, you will create an nginx pod, replace the default nginx index.html, delete the pod, recreate it, and see your changes lost.
+In this exercise, you will use the pod2 nginx pod from earlier to replace the default nginx index.html, delete the pod, recreate it, and see your changes lost.
 
+From the cli-vm:
+1. Execute `kubectl get po pod2`
 
+Verify that the pod is still running. If not, execute `kubectl apply -f pod2.yaml`
+
+2. Execute 
 
