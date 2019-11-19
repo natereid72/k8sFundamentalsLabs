@@ -1,1 +1,1 @@
-# k8sFundamentalsLabs
+# k8s Fundamentals Labs
