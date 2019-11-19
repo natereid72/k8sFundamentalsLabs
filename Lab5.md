@@ -53,7 +53,7 @@ You are now back at the cli-vm shell and the temp pod has been deleted.
 We've seen how to use a ClusterIP service to make a pod available inside the cluster, but what if we wanted to access the pod 
 from outside of the cluster? For that, we have a few options. You'll use a service type *LoadBalancer* in this exercise.
 
-1. Execute `kubectl expose po pod1 --type=LoadBalancer --port=8080 --target-port=80`
+1. Execute `kubectl expose po pod2 --type=LoadBalancer --port=8080 --target-port=80`
 2. Execute `kubectl get svc`
 
 Locate your service of type LoadBalancer and make note of the external IP address that begins with 10.40.14.x. From your web browser, 
