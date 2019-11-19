@@ -1,5 +1,4 @@
-Lab 1 - Explore Cluster Namespaces with kubectl
-------
+## Lab 1 - Explore Cluster Namespaces with kubectl
 
 1. From CLI-VM, execute `kubectl get ns`
 2. Execute `kubectl describe ns default`
