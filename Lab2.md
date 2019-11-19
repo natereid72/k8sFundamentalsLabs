@@ -1,3 +1,5 @@
+## Lab 2 - Explore Running Pods
+
 In this lab, you will use kubectl to view information about running pods.
 
 1. From the cli-vm, execute `kubectl get pods`
