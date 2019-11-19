@@ -11,4 +11,6 @@ You should find there are four namespaces and the default namespace has no resou
 
 You should find there are now five namespaces. The previous four, plus the new namespace you just created.
 
-This is the end of lab 1. You performed a basic kubectl get command and retrieved information about namespaces in the cluster. then you created a new namespace and verified its creation.
+This is the end of lab 1. You performed a basic kubectl get command and retrieved information about namespaces in the cluster. Then you created a new namespace and verified its creation.
+
+The steps in this lab are the foundation of all interactions with a K8s cluster and its resources.
