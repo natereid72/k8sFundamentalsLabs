@@ -63,7 +63,54 @@ In this exercise, you will use the pod2 nginx pod from earlier to replace the de
 From the cli-vm:
 1. Execute `kubectl get po pod2`
 
-Verify that the pod is still running. If not, execute `kubectl apply -f pod2.yaml`
+  Verify that the pod is still running. If not, execute `kubectl apply -f pod2.yaml`
 
-2. Execute 
+2. From your web browser, make sure you can still access the default web page via port 8080
+3. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html" 
+4. Now check your web page (you may need to hold <CTRL> down when you refresh or use an incognito window)
+  
+  You should see your landing page has been updates with the text *hello world*
+
+5. Execute `kubectl delete po pod2`
+6. Execute `kubectl apply -f pod2.yaml`
+
+Use `kubectl get po pod2` to verify when the pod is *Running*.
+
+7. Perform step 4 again
+
+You should see that your changes were lost and the default index.html file has returned. This is because we have not defined persistent storage for the pod. In the next exercise, you will configure the pod for persistent storage and then perform the above steps again. This time, your changes will persist.
+
+#### Configure Persistent Storage
+
+To save you some time, I've included an updated pod2.yaml manifest in the lab file system. If you compare the manifest you have created on your system from earlier, you will see the addition of .spec.volumes and .spec.containers.volumeMounts.
+
+The manifest refers to our persistent volume claim bt its name (my-claim) and specifies a volume name of html-storage. This is used inside the manifest only to link to the container volumeMounts section. Under containers array, you see the volumeMounts section. This section refers to the volumes section to link to the persistent volume by our claim. It also provides a mountPath that points to a directory inside our container. In this case, the directory where nginx retrieves its index.html file from.
+
+With this configuration, any changes written to that directory will be saved in the persistent volume and persist beyond the life of the pod.
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+  labels:
+    run: pod2
+spec:
+  volumes:
+    - name: html-storage
+      persistentVolumeClaim:
+        claimName: my-claim
+  containers:
+    - name: pod2
+      image: nginx
+      volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: html-storage
+ ```
+
+From the cli-vm:
+
+1. Execute `kubectl delete po pod2`
+2. Execute `kubectl apply -f ~/k8sFundamentalsLabs/yaml/pod2.yaml`
+3. Use `kubectl get po pod2` to verify when the pod is Running status.
 
