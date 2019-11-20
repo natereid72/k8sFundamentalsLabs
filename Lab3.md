@@ -24,7 +24,7 @@ Now, you'll create a pod from a manifest file. You could write the manifest file
 You'll see that the pod2.yaml file contains the output produced by the inclusion of the `-o yaml` switch. This has generated a manifest file that you can now use to create a pod with name 'pod2' that has the image 'nginx'.
 
 5. Execute `kubectl apply -f pod2.yaml`
-6. Execute `kubectl get po pod2 -w`
+6. Execute `kubectl get po pod2 -o wide`
 
 Once the pod shows status of running, use `CTRL-C` to exit the watch loop.
 
