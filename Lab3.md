@@ -18,7 +18,7 @@ Once the pod shows status of running, use `CTRL-C` to exit the watch loop. You h
 
 Now, you'll create a pod from a manifest file. You could write the manifest file from scratch with a text editor, or you can use the `kubectl run` command with the `-o yaml` switch and pipe it into a file. This latter method is a quick way to create a 'skeleton' of a manifest file. For the second pod, we will use this method to create a template and then create pod from that manifest.
 
-3. From the cli-vm, execute `kubectl run pod2 --image=nginx --restart=Never -o yaml > pod2.yaml`
+3. From the cli-vm, execute `kubectl run pod2 --image=nginx --restart=Never --dry-run -o yaml > pod2.yaml`
 4. Execute `cat pod2.yaml`
 
 You'll see that the pod2.yaml file contains the output produced by the inclusion of the `-o yaml` switch. This has generated a manifest file that you can now use to create a pod with name 'pod2' that has the image 'nginx'.
