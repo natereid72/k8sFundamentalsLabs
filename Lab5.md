@@ -9,21 +9,21 @@ This is known as a *clusterIP* address and will draw from a dfferent CIDR range 
 #### Create a ClusterIP Service
 
 1. From the cli-vm, execute `kubectl get po pod1` to verify your pod pod1 is still running.
-2. Execute `kubectl expose po pod1 --name=pod1-svc --port=8080 --target-port=80`
+2. Execute `kubectl expose po pod1 --name=pod1-svc --port=80 --target-port=80`
 3. Execute `kubectl get svc`
 
 You will see that you've created a service called *pod1-svc*, of type *ClusterIP*, with a cluster IP address in the CIDR range of 
-10.100.200.0/24, no external-IP, and listening on port 8080/TCP.
+10.100.200.0/24, no external-IP, and listening on port 80/TCP.
 
 ClusterIP is the default type when no type is specified during creation. Later, you will perform a similar service ceration but will 
 specify *Type* to change this default behavior.
 
-Now, try to access your pod on port 8080 from the command line of your cli-vm. Since the pod was created with an nginx container, you 
+Now, try to access your pod on port 80 from the command line of your cli-vm. Since the pod was created with an nginx container, you 
 should be able to use the `curl` command to retrieve the default index.html page.
 
 Make note of your services *ClusterIP* address (Write it down for future reference) and curl it.
 
-4. Execute `curl 10.100.200.x:8080`  - Where *x* is your specific address
+4. Execute `curl 10.100.200.x:80`  - Where *x* is your specific address
 
 You will not retrieve the index.html with the above. Use `CTRL-C` to cancel the failing curl attempts.
 
@@ -40,7 +40,7 @@ In the next step, you will be creating a temporary pod and executing curl from w
 6. Wait for the `#` prompt to appear. You may need to hit the <Enter> key once or twice
 7. Execute `apt update`
 8. Execute `apt install curl -y`
-9. Execute `curl <your-svc-ip-addr>:8080`
+9. Execute `curl <your-svc-ip-addr>:80`
 
 You should now succesfully retrieve the nginx default index.html file.
 
