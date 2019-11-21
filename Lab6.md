@@ -3,7 +3,7 @@
 In this lab, you will modify the index.html of an nginx pod, verify it has been modified, recreate the pod, see that your changes were lost, 
 configure persistent storage for the pod, repeat the steps and verify changes are no longer lost.
 
-First, you'll create a default storage class for the cluster with an existing file. The contents of the file are this:
+First, you'll create a default storage class for the cluster with an existing file. The content of the file is this:
 
 ```
 apiVersion: storage.k8s.io/v1
