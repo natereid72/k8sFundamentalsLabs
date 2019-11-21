@@ -12,7 +12,7 @@ The output should be "pod/pod1 created". Verify the pod is in the *creating* sta
 
 2. Execute `kubectl get po pod1` until you see the pod as Ready. 
 
-Once the pod shows status of running, use `CTRL-C` to exit the watch loop. You have created a pod named *pod1* with the nginx image running as a container. The API server received your request via kubectl, created entries in the cluster etcd, contacted the scheduler with directions, the scheduler directed a selected worker node to download the image and load it. There were more steps, but those are the basic steps that took place.
+You have created a pod named *pod1* with the nginx image running as a container. The API server received your request via kubectl, created entries in the cluster etcd, contacted the scheduler with directions, the scheduler directed a selected worker node to download the image and load it. There were more steps, but those are the basic steps that took place.
 
 #### Create Second Pod
 
