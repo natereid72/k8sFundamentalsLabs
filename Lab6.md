@@ -115,7 +115,7 @@ From the cli-vm:
   You should see your landing page has been updated with the text *hello world*
 
 6. Execute `kubectl delete po pod2`
-7. Execute `kubectl apply -f pod2.yaml`
+7. Execute `kubectl apply -f https://raw.githubusercontent.com/natereid72/k8sFundamentalsLabs/master/yaml/pod2.yaml`
 
 Use `kubectl get po pod2` to verify when the pod is *Running*.
 
