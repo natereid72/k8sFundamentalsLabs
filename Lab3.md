@@ -10,7 +10,7 @@ There will not be a great deal of explanation about the commands or methods. The
 
 The output should be "pod/pod1 created". Verify the pod is in the *creating* state and then enters *running* state.
 
-2. Execute `kubectl get po pod1 -w`
+2. Execute `kubectl get po pod1` until you see the pod as Ready. 
 
 Once the pod shows status of running, use `CTRL-C` to exit the watch loop. You have created a pod named *pod1* with the nginx image running as a container. The API server received your request via kubectl, created entries in the cluster etcd, contacted the scheduler with directions, the scheduler directed a selected worker node to download the image and load it. There were more steps, but those are the basic steps that took place.
 
@@ -24,8 +24,6 @@ Now, you'll create a pod from a manifest file. You could write the manifest file
 You'll see that the pod2.yaml file contains the output produced by the inclusion of the `-o yaml` switch. This has generated a manifest file that you can now use to create a pod with name 'pod2' that has the image 'nginx'.
 
 5. Execute `kubectl apply -f pod2.yaml`
-6. Execute `kubectl get po pod2 -o wide`
+6. Execute `kubectl get po pod2` until you see the pod as Ready
 
-Once the pod shows status of running, use `CTRL-C` to exit the watch loop.
-
-You have created two pods, both running an nginx container. This is the end of Lab 3.
+You have created two pods, both running an nginx container. This is the end of the lab.
