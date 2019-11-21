@@ -62,7 +62,7 @@ From the cli-vm:
 
 If you forgot the IP address, execute `kubectl get svc` again.
 
-3. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html"`
+3. Execute `kubectl exec -it pod2  -- bash -c "echo '<h1>hello world' > /usr/share/nginx/html/index.html"`
 4. Now check your web page (you may need to use an incognito window to avoid retrieving a cached copy)
   
   You should see your landing page has been updates with the text *hello world*
@@ -109,7 +109,7 @@ From the cli-vm:
 1. Execute `kubectl delete po pod2`
 2. Execute `kubectl apply -f https://raw.githubusercontent.com/natereid72/k8sFundamentalsLabs/master/yaml/pod2.yaml`
 3. Use `kubectl get po pod2` to verify when the pod is Running status.
-4. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html"`
+4. Execute `kubectl exec -it pod2  -- bash -c "echo '<h1>hello world' > /usr/share/nginx/html/index.html"`
 5. Now check your web page (you may need to use an incognito window to avoid retrieving a cached copy)
   
   You should see your landing page has been updated with the text *hello world*
