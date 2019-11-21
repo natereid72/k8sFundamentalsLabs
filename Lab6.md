@@ -109,7 +109,7 @@ From the cli-vm:
 1. Execute `kubectl delete po pod2`
 2. Execute `kubectl apply -f ~/k8sFundamentalsLabs/yaml/pod2.yaml`
 3. Use `kubectl get po pod2` to verify when the pod is Running status.
-4. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html" 
+4. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html"`
 5. Now check your web page (you may need to hold <CTRL> down when you refresh or use an incognito window)
   
   You should see your landing page has been updates with the text *hello world*
