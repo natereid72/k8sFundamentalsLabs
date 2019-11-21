@@ -20,7 +20,7 @@ provisioner: kubernetes.io/vsphere-volume
 #### Create a Storage Class
 
 From the cli-vm:
-1. Execute `kubectl apply -f ~/k8sFundamentalsLabs/yaml/default-sc.yaml`
+1. Execute `kubectl apply -f https://raw.githubusercontent.com/natereid72/k8sFundamentalsLabs/master/yaml/default-sc.yaml`
 2. Execute `kubectl get sc`
 
 You now have a storage class defined in the cluster that uses the in-tree vsphere-volume provider. You can now create persistent volume claims that will use that storage class by default to create and bind to a persistent volume.
@@ -43,7 +43,7 @@ spec:
 #### Create a Persistent Volume Claim
 
 From cli-vm:
-1. Execute `kubectl apply -f ~/k8sFundamentalsLabs/yaml/pvc-1.yaml`
+1. Execute `kubectl apply -f https://raw.githubusercontent.com/natereid72/k8sFundamentalsLabs/master/yaml/pvc-1.yaml`
 2. Execute `kubectl get pvc`
 3. Execute `kubectl get pv`
 
@@ -107,7 +107,7 @@ spec:
 From the cli-vm:
 
 1. Execute `kubectl delete po pod2`
-2. Execute `kubectl apply -f ~/k8sFundamentalsLabs/yaml/pod2.yaml`
+2. Execute `kubectl apply -f https://raw.githubusercontent.com/natereid72/k8sFundamentalsLabs/master/yaml/pod2.yaml`
 3. Use `kubectl get po pod2` to verify when the pod is Running status.
 4. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html"`
 5. Now check your web page (you may need to use an incognito window to avoid retrieving a cached copy)
