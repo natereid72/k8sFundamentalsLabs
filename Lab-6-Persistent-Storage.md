@@ -143,7 +143,7 @@ https://raw.githubusercontent.com/natereid72/k8sFundamentalsLabs/master/yaml/pod
 
 Use `kubectl get po pod2` to verify when the pod is *Running*.
 
-8. Perform step 4 again
+8. Perform step 5 again
 
 This time, you should see that the changes you made to index.html persist.
 
