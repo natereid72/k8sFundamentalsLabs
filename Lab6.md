@@ -62,7 +62,7 @@ From the cli-vm:
 
 If you forgot the IP address, execute `kubectl get svc` again.
 
-3. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html" 
+3. Execute `kubectl exec -it pod2  -- bash -c "echo 'hello world' > /usr/share/nginx/html/index.html"`
 4. Now check your web page (you may need to hold <CTRL> down when you refresh or use an incognito window)
   
   You should see your landing page has been updates with the text *hello world*
