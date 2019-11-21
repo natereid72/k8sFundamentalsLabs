@@ -48,6 +48,14 @@ You should now succesfully retrieve the nginx default index.html file.
 
 You are now back at the cli-vm shell and the temp pod has been deleted.
 
+Use a pod to submit an nslookup of the service you created, without entering the shell:
+
+1. Execute 
+```
+kubectl run temp --image=busybox:1.28 --restart=Never --rm -ti /
+-- nslookup pod1-svc.default.svc.cluster.local
+```
+
 #### Create a LoadBalancer Service to Access Pod from Outside World
 
 We've seen how to use a ClusterIP service to make a pod available inside the cluster, but what if we wanted to access the pod 
