@@ -30,7 +30,7 @@ You will not retrieve the index.html with the above. Use `CTRL-C`(Win) or `Comma
 The reason this does not work is bcause the pod and service IP addresses are non-routable, and not inteded to be used outside of the 
 K8s cluster. These addresses are for K8s services to work with each other only.
 
-So, how do you see if the container is working within the cluster scope? There are a couple of ways, we can use a specialy kubectl port 
+So, how do you see if the container is working within the cluster scope? There are a couple of ways, we can use a kubectl port 
 forward method that creates a temporary proxy into the cluster. Or we can get an interactive shell within a pod and then execute 
 our curl command from there. 
 
