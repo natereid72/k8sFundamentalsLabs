@@ -4,7 +4,7 @@
 https://kubernetes.io/docs/reference/kubectl/overview/<br>
 https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
-If using the VMware Enterprise PKS lab, you may need to refresh cluster credentials before performing the steps in these labs. Perform the following two steps before proceeding to the lab directions.
+You may need to refresh cluster credentials before performing the steps in these labs. Perform the following two steps before proceeding to the lab directions.
 
 - `pks login -a pks.corp.local -u pksadmin -p VMware1! -k`
 - `pks get-credentials my-cluster`
