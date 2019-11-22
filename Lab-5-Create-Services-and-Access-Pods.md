@@ -65,7 +65,7 @@ from outside of the cluster? For that, we have a few options. You'll use a servi
 2. Execute `kubectl get svc`
 
 Locate your service of type LoadBalancer and make note of the external IP address that begins with 10.40.14.x. From your web browser, 
-go to `http://<external-ip-address>:8080`
+go to `http://<external-ip-address>`
 
 You should now be able to access the nginx index.html from outside of the cluster.
 
