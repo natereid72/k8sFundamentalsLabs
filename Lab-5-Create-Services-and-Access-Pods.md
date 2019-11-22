@@ -25,7 +25,7 @@ Make note of your services *ClusterIP* address (Write it down for future referen
 
 4. Execute `curl 10.100.200.x:80`  - Where *x* is your specific address
 
-You will not retrieve the index.html with the above. Use `CTRL-C` to cancel the failing curl attempts.
+You will not retrieve the index.html with the above. Use `CTRL-C`(Win) or `Command .` (Mac) to cancel the failing curl attempts.
 
 The reason this does not work is bcause the pod and service IP addresses are non-routable, and not inteded to be used outside of the 
 K8s cluster. These addresses are for K8s services to work with each other only.
