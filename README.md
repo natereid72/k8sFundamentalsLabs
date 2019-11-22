@@ -4,7 +4,7 @@ While these labs should work on any k8s cluster, the directions are designed for
 
 If working on another k8s cluster, references to cli-vm would be your workstation with kubectl installed and the persistent storage lab may require some modification if the k8s cluster is not running on an esxi host (This is due to the storage provider specification.).
 
-There is a corresponding slide deck and lecture that covers the topics in the labs, but you should be able get idea of each lab topic via the link provided to kubernetes docs in each lab guide.
+There is a corresponding slide deck and lecture that covers the topics in the labs, but you should be able to get the idea of each lab topic via the link provided to kubernetes docs in each lab guide.
 
 The intent of these labs is to provide a basic introduction of k8s concepts.
 
