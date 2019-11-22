@@ -7,9 +7,9 @@ If working on another k8s cluster, references to cli-vm would be your workstatio
 The intent of these labs is to provide a basic introduction of k8s concepts.
 
 [Lab 1 - Explore Cluster Namespaces with kubectl](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-1-Explore-Cluster-Namespaces-with-kubectl.md)<br>
-[Lab 2 - Explore Running Pods](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/Lab-2-Explore-Running-Pods.md)<br>
-[Lab 3 - Create Pods](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/Lab-3-Create-Pods.md)<br>
-[Lab 4 - Explore Pod and Node Networking](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/Lab-4-Explore-Pod-and-Node-Networking.md)<br>
-[Lab 5 - Create Services and Access Pods](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/Lab-5-Create-Services-and-Access-Pods.md)<br>
-[Lab 6 - Persistent Storage](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/Lab-6-Persistent-Storage.md)<br>
-[Lab 7 - Deployments and ReplicaSets](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/Lab-7-Deployments-and-ReplicaSets.md)<br>
+[Lab 2 - Explore Running Pods](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-2-Explore-Running-Pods.md)<br>
+[Lab 3 - Create Pods](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-3-Create-Pods.md)<br>
+[Lab 4 - Explore Pod and Node Networking](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-4-Explore-Pod-and-Node-Networking.md)<br>
+[Lab 5 - Create Services and Access Pods](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-5-Create-Services-and-Access-Pods.md)<br>
+[Lab 6 - Persistent Storage](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-6-Persistent-Storage.md)<br>
+[Lab 7 - Deployments and ReplicaSets](https://github.com/natereid72/k8sFundamentalsLabs/blob/master/labs/Lab-7-Deployments-and-ReplicaSets.md)<br>
