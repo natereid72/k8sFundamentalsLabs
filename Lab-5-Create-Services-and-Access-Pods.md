@@ -55,7 +55,7 @@ Use a pod to submit an nslookup of the service you created, without entering the
 
 1. Execute 
 ```
-kubectl run temp --image=busybox:1.28 --restart=Never --rm -ti /
+kubectl run temp --image=busybox:1.28 --restart=Never --rm -ti \
 -- nslookup pod1-svc.default.svc.cluster.local
 ```
 
