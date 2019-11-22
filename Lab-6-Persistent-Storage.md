@@ -1,5 +1,8 @@
 ## Lab 6 - Persistent Storage
 
+#### Reference Material
+https://kubernetes.io/docs/concepts/storage/
+
 In this lab, you will modify the index.html of an nginx pod, verify it has been modified, recreate the pod, see that your changes were lost, configure persistent storage for the pod, repeat the steps and verify changes are no longer lost. 
 
 To save you some time, and for those that are not familiar with linux/nix text editors, I've already created the files. You will apply them from a url pointing to where they are stored.
