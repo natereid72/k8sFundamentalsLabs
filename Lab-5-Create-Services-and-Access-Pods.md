@@ -1,5 +1,8 @@
 ## Lab 5 - Create Services and Access Pods
 
+#### Reference Material 
+https://kubernetes.io/docs/concepts/services-networking/service/
+
 In this exercise, you will create cluster service objects that front-end a pod. Per the lecture, pods are ephemeral and their IP addresses 
 are not consistent over their lifetime. For this reason, we create a service object that will act as a cluster load balancer to a pod(s) for other 
 other pods to reach it.
