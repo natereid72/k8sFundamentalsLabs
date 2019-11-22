@@ -136,7 +136,7 @@ kubectl exec -it pod2 -- bash -c "echo '<br><center><h1>hello again</center>' \
 ```
 5. Now check your web page (you may need to use an incognito window to avoid retrieving a cached copy)
   
-  You should see your landing page has been updated with the text *hello world*
+  You should see your landing page has been updated with the text *hello again*
 
 6. Execute `kubectl delete po pod2`
 7. Execute 
