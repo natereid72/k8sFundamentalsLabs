@@ -32,8 +32,7 @@ how you would update an application. You'll see how the deployment keeps track o
 9. Execute `kubectl set image deployment/dep1 dep1=natereid/webapp:2.0.0 --record`
 10. Execute `kubectl rollout history deploy dep1`
 
-You will see two revisions now, wth the command you executed under change status for revisio 2. This is the result of using the --record 
-switch.
+You will see two revisions now, wth the command you just executed listed under change status for revision 2. This is the result of using the --record switch.
 
 Return to your web page, and you see it is now updated with the Application v2 and green background page. The rollout updated the ReplicaSet 
 pods without outage.
