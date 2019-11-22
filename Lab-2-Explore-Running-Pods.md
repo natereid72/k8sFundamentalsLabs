@@ -2,6 +2,9 @@
 
 In this lab, you will use kubectl to view information about running pods.
 
+#### Reference Material
+https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+
 1. From the cli-vm, execute `kubectl get pods`
 
 You will see there are no pods running in the current namespace. When you use `kubectl`,
