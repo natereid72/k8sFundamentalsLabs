@@ -1,5 +1,8 @@
 ## Lab 3 - Create Pods
 
+#### Reference Material
+https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+
 In this lab, you will create two pods. You will use the `kubectl run` command to directly create the first pod. Then you will use the same command with the `-o yaml` switch to create a pod manifest file, and then the `kubectl apply -f` command to create a second pod from the manifest file.
 
 There will not be a great deal of explanation about the commands or methods. There are links in the slide deck for you to follow and learn more about the methods used here. For now, the expectation is to create two pods, while having some exposure to different methods of `kubectl` to work with K8s.
