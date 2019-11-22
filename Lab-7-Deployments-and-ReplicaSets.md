@@ -1,5 +1,8 @@
 ## Lab 7 - Deployments and ReplicaSets
 
+#### Reference Material
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
 In this lab, you'll create a Deployment, scale the deployment, update the deployment with a new container image, and then perform 
 a rollback. This is the foundation of managing scaled applications within a K8s cluster.
 
