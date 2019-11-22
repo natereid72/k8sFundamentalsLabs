@@ -37,7 +37,7 @@ our curl command from there.
 In the next step, you will be creating a temporary pod and executing curl from within the pod. 
 
 5. Execute `kubectl run temp --image=nginx --restart=Never --rm -ti -- sh`
-6. Wait for the `#` prompt to appear. You may need to hit the <Enter> key once or twice
+6. Wait for the `#` prompt to appear. You may need to hit the *\<Enter\>* key once or twice
 7. Execute `apt update`
 8. Execute `apt install curl -y`
 9. Execute `curl <your-svc-ip-addr>:80`
